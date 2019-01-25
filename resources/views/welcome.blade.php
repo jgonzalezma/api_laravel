@@ -81,7 +81,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    @foreach($planets as $planet)
+                    <li>{{$planet['name']}}</li>
+                    @endforeach
                 </div>
 
                 <div class="links">
